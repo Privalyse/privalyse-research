@@ -1,0 +1,282 @@
+{
+  "original": {
+    "correct": 12,
+    "total": 12,
+    "details": [
+      {
+        "doc_id": "doc_001",
+        "question": "Who is John Smith's manager?",
+        "expected": "Sarah Chen",
+        "predicted": "Sarah Chen",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_001",
+        "question": "When did the manager approve the vacation?",
+        "expected": "November 30",
+        "predicted": "November 30th",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "Who is handling Maria Garcia's case?",
+        "expected": "David Lee",
+        "predicted": "David Lee",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "What was wrong with the delivery?",
+        "expected": "damaged",
+        "predicted": "Item was damaged.",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who is responsible for the authentication module?",
+        "expected": "Bob Martinez",
+        "predicted": "Bob Martinez",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who will review the authentication code?",
+        "expected": "Carol Zhang",
+        "predicted": "Carol Zhang",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "What is Alice Wong's role?",
+        "expected": "PM",
+        "predicted": "PM",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "Who recommended Tom Wilson for promotion?",
+        "expected": "Lisa Park",
+        "predicted": "Lisa Park",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "What promotion was recommended?",
+        "expected": "Senior Engineer",
+        "predicted": "Senior Engineer",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Whose account was compromised?",
+        "expected": "Emma Davis",
+        "predicted": "Emma Davis",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who locked the compromised account?",
+        "expected": "Rachel Kim",
+        "predicted": "Rachel Kim",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who first detected the security incident?",
+        "expected": "Kevin Brown",
+        "predicted": "Kevin Brown",
+        "correct": true
+      }
+    ],
+    "accuracy": 1.0
+  },
+  "presidio": {
+    "correct": 2,
+    "total": 12,
+    "details": [
+      {
+        "doc_id": "doc_001",
+        "question": "Who is John Smith's manager?",
+        "expected": "Sarah Chen",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_001",
+        "question": "When did the manager approve the vacation?",
+        "expected": "November 30",
+        "predicted": "<DATE_TIME>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "Who is handling Maria Garcia's case?",
+        "expected": "David Lee",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "What was wrong with the delivery?",
+        "expected": "damaged",
+        "predicted": "Item damaged",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who is responsible for the authentication module?",
+        "expected": "Bob Martinez",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who will review the authentication code?",
+        "expected": "Carol Zhang",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "What is Alice Wong's role?",
+        "expected": "PM",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "Who recommended Tom Wilson for promotion?",
+        "expected": "Lisa Park",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "What promotion was recommended?",
+        "expected": "Senior Engineer",
+        "predicted": "Senior Engineer",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Whose account was compromised?",
+        "expected": "Emma Davis",
+        "predicted": "intern <PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who locked the compromised account?",
+        "expected": "Rachel Kim",
+        "predicted": "<PERSON>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who first detected the security incident?",
+        "expected": "Kevin Brown",
+        "predicted": "<PERSON>",
+        "correct": false
+      }
+    ],
+    "accuracy": 0.16666666666666666
+  },
+  "privalyse": {
+    "correct": 11,
+    "total": 12,
+    "details": [
+      {
+        "doc_id": "doc_001",
+        "question": "Who is John Smith's manager?",
+        "expected": "Sarah Chen",
+        "predicted": "{Name_99f2a}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_001",
+        "question": "When did the manager approve the vacation?",
+        "expected": "November 30",
+        "predicted": "{Date_November_2026}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "Who is handling Maria Garcia's case?",
+        "expected": "David Lee",
+        "predicted": "{Name_00437}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_002",
+        "question": "What was wrong with the delivery?",
+        "expected": "damaged",
+        "predicted": "Item was damaged.",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who is responsible for the authentication module?",
+        "expected": "Bob Martinez",
+        "predicted": "{Name_aec08}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "Who will review the authentication code?",
+        "expected": "Carol Zhang",
+        "predicted": "{Name_f9c33}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_003",
+        "question": "What is Alice Wong's role?",
+        "expected": "PM",
+        "predicted": "<Name_647dc>",
+        "correct": false
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "Who recommended Tom Wilson for promotion?",
+        "expected": "Lisa Park",
+        "predicted": "{Name_8b212}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_004",
+        "question": "What promotion was recommended?",
+        "expected": "Senior Engineer",
+        "predicted": "Senior Engineer",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Whose account was compromised?",
+        "expected": "Emma Davis",
+        "predicted": "{Name_7fc27}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who locked the compromised account?",
+        "expected": "Rachel Kim",
+        "predicted": "{Name_d4126}",
+        "correct": true
+      },
+      {
+        "doc_id": "doc_005",
+        "question": "Who first detected the security incident?",
+        "expected": "Kevin Brown",
+        "predicted": "{Name_90b0b}",
+        "correct": true
+      }
+    ],
+    "accuracy": 0.9166666666666666
+  },
+  "retention": {
+    "baseline_questions": 12,
+    "presidio": 2,
+    "privalyse": 11,
+    "presidio_pct": 16.666666666666664,
+    "privalyse_pct": 91.66666666666666
+  }
+}
