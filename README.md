@@ -29,7 +29,9 @@ Replace entities with **distinguishable placeholders**:
 Semantic: "{Name_a3f2}'s manager {Name_b7c9} approved the request."
 ```
 
-The LLM answers `{Name_b7c9}`. We unmask it → `Sarah`. ✅
+The LLM answers `{Name_b7c9}`. We unmask it → `Sarah`. ✅  
+
+You can check out the repo here: [`https://github.com/Privalyse/privalyse-mask`](https://github.com/Privalyse/privalyse-mask)  
 
 ---
 
@@ -45,7 +47,7 @@ The LLM answers `{Name_b7c9}`. We unmask it → `Sarah`. ✅
 | Generic Redaction (`<PERSON>`) | **~30%** |
 | Semantic Masking (`{Name_hash}`) | **~100%** |
 
-**Script:** [`context_research/01_coreference_benchmark.py`](context_research/01_coreference_benchmark.py)
+**Script:** [`context_research/01_coreference_benchmark.py`](context_research/01_coreference_benchmark.py)  
 **Results:** [`results/coref_benchmark_20260111_232715.json`](results/coref_benchmark_20260111_232715.json)
 
 ### 2. RAG Question Answering
