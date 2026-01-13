@@ -8,8 +8,8 @@
 
 | Benchmark | Generic Redaction | Semantic Masking |
 |-----------|-------------------|------------------|
-| **Coreference** (entity tracking) | ~30% retained | ~100% retained |
-| **RAG QA** (relationship questions) | ~10% retained | 92-100% retained |
+| **Coreference** (entity tracking) | 27% retained | 100% retained |
+| **RAG QA** (relationship questions) | 17% retained | 92% retained |
 
 **Baseline:** Original unmasked text = 100%
 
@@ -45,8 +45,8 @@ Q: Who presented the proposal?
 | Strategy | Retention | Sample Failure |
 |----------|-----------|----------------|
 | Original | 100% | — |
-| Generic | ~10% | Q: "Who approved?" A: `<PERSON>` ❌ |
-| Semantic | 92-100% | Rare format hallucination |
+| Generic | 17% | Q: "Who approved?" A: `<PERSON>` ❌ |
+| Semantic | 92% | Rare format hallucination |
 
 ---
 

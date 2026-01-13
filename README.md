@@ -44,11 +44,11 @@ You can check out the repo here: [`https://github.com/Privalyse/privalyse-mask`]
 | Strategy | Context Retention |
 |----------|-------------------|
 | Original (baseline) | 100% |
-| Generic Redaction (`<PERSON>`) | **~30%** |
-| Semantic Masking (`{Name_hash}`) | **~100%** |
+| Generic Redaction (`<PERSON>`) | **27%** |
+| Semantic Masking (`{Name_hash}`) | **100%** |
 
 **Script:** [`context_research/01_coreference_benchmark.py`](context_research/01_coreference_benchmark.py)  
-**Results:** [`results/coref_benchmark_20260111_232715.json`](results/coref_benchmark_20260111_232715.json)
+**Results:** [`results/coref_benchmark.json`](results/coref_benchmark.json)
 
 ### 2. RAG Question Answering
 
@@ -57,8 +57,8 @@ You can check out the repo here: [`https://github.com/Privalyse/privalyse-mask`]
 | Strategy | Context Retention |
 |----------|-------------------|
 | Original (baseline) | 100% |
-| Generic Redaction | **~10%** |
-| Semantic Masking | **92-100%** |
+| Generic Redaction | **17%** |
+| Semantic Masking | **92%** |
 
 **Script:** [`context_research/02_rag_qa_benchmark.py`](context_research/02_rag_qa_benchmark.py)  
 **Results:** [`results/rag_qa_benchmark.json`](results/rag_qa_benchmark.json)
